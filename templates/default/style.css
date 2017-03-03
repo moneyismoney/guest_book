@@ -1,0 +1,117 @@
+body {
+	background-color: #ffffff;
+	padding: 10px 10px 10px 10px;
+	text-align: center;
+	margin: 0px;
+	font: 8pt Verdana, Arial, Helvetica, sans-serif;
+	color: #303030;
+}
+
+img {
+	border: 0px;
+}
+
+a {
+	text-decoration: none;
+	color: #b9d3ee;
+} 
+
+a:hover {
+	text-decoration: none;
+	color: #a2b5cd;
+}
+
+a.foot {
+	text-decoration:underline;
+	color: #0066cc;
+} 
+
+a.foot:hover {
+	color: #0c0c0c;
+}
+
+#container {
+	background-color: #ffffff;
+	border: 1px solid #cccccc;
+	padding: 10px 10px 10px 10px;
+	width: 650px;
+	margin: 0px auto;
+	text-align: left;
+}
+
+table {
+	font-size: 8pt;
+	width: 100%
+}
+
+div.main {
+	background-color: #0066cc;
+	color: #f0f0f0;
+	padding: 1px 10px 1px 10px;
+	font-size: 14pt;
+}
+
+div.header1 {
+	background-color: #1c1c1c;
+	color: #f0f0f0;
+	margin-top: 0px;
+	padding: 4px 4px 4px 4px;
+	border: 1px solid #000000;
+}
+
+div.header2 {
+	background-color: #0066cc;
+	color: #f0f0f0;
+	margin-top: 8px;
+	padding: 4px 4px 4px 4px;
+	border: 1px solid #0066cc;
+}
+
+div.langbox {
+	text-align: right;
+	margin-top: 4px;
+	padding: 4px 4px 4px 4px;
+}
+
+div.message {
+	padding: 4px 4px 4px 4px;
+	color: #000000;
+	margin-top: 8px;
+	width: 640px;
+	height: auto;
+	overflow: auto;
+	border-top: 1px solid #cccccc;
+	border-left: 1px solid #cccccc;
+	border-right: 1px solid #cccccc;
+}
+
+div.info {
+	background-color: #0066cc;
+	padding: 4px 4px 4px 4px;
+	border: 1px solid #cccccc;
+	color: #fffafa;
+}
+
+div.pages {
+	background-color: #1c1c1c;
+	color: #f0f0f0;
+	margin-top: 8px;
+	padding: 4px 4px 4px 4px;
+	border: 1px solid #000000;
+	font-style: bold;
+}
+
+div.table {
+	background-color: #f1f3f5;
+	margin-top: 8px;
+	padding: 4px 4px 4px 4px;
+	border: 1px solid #cccccc;
+	color: #1c1c1c;
+}
+
+div.footer {
+	background-color: transparent;
+	color: #1c1c1c;
+	padding: 4px 4px 4px 4px;
+	font-size: 7.5pt;
+}
