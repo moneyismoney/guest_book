@@ -170,11 +170,12 @@ if (isset($HTTP_COOKIE_VARS["post"])) {
 	}
 
     echo "<h1>Checking Email = $email</h1> and regexp = ";
-    if (
-        preg_match("^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$", $email)
-        )
-        echo "Regexp = true";
-    exit;
+    if ( !preg_match("/[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})/", $email) )
+        echo "Regexp = Not true";
+    else {
+        echo "Regexp = true, =".preg_match("/[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})/", $email);
+    }
+    //exit;
     
 	if ($spamcount == 1) {
 
@@ -184,7 +185,7 @@ if (isset($HTTP_COOKIE_VARS["post"])) {
 		</script>
 		<?
 
-	} elseif (!preg_match("^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$", $email) && !empty($email)) {
+	} elseif (!preg_match("/[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})/", $email) && !empty($email)) {
 
 		?>
 		<script type="text/javascript">
@@ -337,3 +338,5 @@ if (isset($HTTP_COOKIE_VARS["post"])) {
 		}
 	}
 }
+
+exit();
